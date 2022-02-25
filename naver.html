@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Profile Gallery - naver</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Profile Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="naver.html">naver</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/naver/blog.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/blog.png"
+                
+                data-filename="blog.png"
+          
+              >
+              <a href="media/original/naver/blog.png">
+                <img src="media/thumbs/naver/blog.png"
+                     width="120"
+                     height="120"
+                     alt="blog.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/naver.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/naver.png"
+                
+                data-filename="naver.png"
+          
+              >
+              <a href="media/original/naver/naver.png">
+                <img src="media/thumbs/naver/naver.png"
+                     width="120"
+                     height="120"
+                     alt="naver.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/navercafe.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/navercafe.png"
+                
+                data-filename="navercafe.png"
+          
+              >
+              <a href="media/original/naver/navercafe.png">
+                <img src="media/thumbs/naver/navercafe.png"
+                     width="120"
+                     height="120"
+                     alt="navercafe.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/navernews.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/navernews.png"
+                
+                data-filename="navernews.png"
+          
+              >
+              <a href="media/original/naver/navernews.png">
+                <img src="media/thumbs/naver/navernews.png"
+                     width="120"
+                     height="120"
+                     alt="navernews.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/naverstore.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/naverstore.png"
+                
+                data-filename="naverstore.png"
+          
+              >
+              <a href="media/original/naver/naverstore.png">
+                <img src="media/thumbs/naver/naverstore.png"
+                     width="120"
+                     height="120"
+                     alt="naverstore.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/navertv.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/navertv.png"
+                
+                data-filename="navertv.png"
+          
+              >
+              <a href="media/original/naver/navertv.png">
+                <img src="media/thumbs/naver/navertv.png"
+                     width="120"
+                     height="120"
+                     alt="navertv.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/post.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/post.png"
+                
+                data-filename="post.png"
+          
+              >
+              <a href="media/original/naver/post.png">
+                <img src="media/thumbs/naver/post.png"
+                     width="120"
+                     height="120"
+                     alt="post.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/naver/post_white.png"
+                data-sub-html=""
+                data-download-url="media/original/naver/post_white.png"
+                
+                data-filename="post_white.png"
+          
+              >
+              <a href="media/original/naver/post_white.png">
+                <img src="media/thumbs/naver/post_white.png"
+                     width="120"
+                     height="120"
+                     alt="post_white.png" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©️ CORDTOWN</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
