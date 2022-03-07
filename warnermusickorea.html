@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Profile Gallery - warnermusickorea</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Profile Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="warnermusickorea.html">warnermusickorea</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/warnermusickorea/warnermusickorea.jpg"
+                data-sub-html=""
+                data-download-url="media/original/warnermusickorea/warnermusickorea.jpg"
+                
+                data-filename="warnermusickorea.jpg"
+          
+              >
+              <a href="media/original/warnermusickorea/warnermusickorea.jpg">
+                <img src="media/thumbs/warnermusickorea/warnermusickorea.jpg"
+                     width="120"
+                     height="120"
+                     alt="warnermusickorea.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/warnermusickorea/warnermusickorea_facebook.jpg"
+                data-sub-html=""
+                data-download-url="media/original/warnermusickorea/warnermusickorea_facebook.jpg"
+                
+                data-filename="warnermusickorea_facebook.jpg"
+          
+              >
+              <a href="media/original/warnermusickorea/warnermusickorea_facebook.jpg">
+                <img src="media/thumbs/warnermusickorea/warnermusickorea_facebook.jpg"
+                     width="120"
+                     height="120"
+                     alt="warnermusickorea_facebook.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/warnermusickorea/warnermusickorea_instagram.jpg"
+                data-sub-html=""
+                data-download-url="media/original/warnermusickorea/warnermusickorea_instagram.jpg"
+                
+                data-filename="warnermusickorea_instagram.jpg"
+          
+              >
+              <a href="media/original/warnermusickorea/warnermusickorea_instagram.jpg">
+                <img src="media/thumbs/warnermusickorea/warnermusickorea_instagram.jpg"
+                     width="120"
+                     height="120"
+                     alt="warnermusickorea_instagram.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/warnermusickorea/warnermusickorea_tiktok.jpeg"
+                data-sub-html=""
+                data-download-url="media/original/warnermusickorea/warnermusickorea_tiktok.jpeg"
+                
+                data-filename="warnermusickorea_tiktok.jpeg"
+          
+              >
+              <a href="media/original/warnermusickorea/warnermusickorea_tiktok.jpeg">
+                <img src="media/thumbs/warnermusickorea/warnermusickorea_tiktok.jpeg"
+                     width="120"
+                     height="120"
+                     alt="warnermusickorea_tiktok.jpeg" />
+              </a>
+            </li>      
+            <li data-src="media/large/warnermusickorea/warnermusickorea_twitter.jpg"
+                data-sub-html=""
+                data-download-url="media/original/warnermusickorea/warnermusickorea_twitter.jpg"
+                
+                data-filename="warnermusickorea_twitter.jpg"
+          
+              >
+              <a href="media/original/warnermusickorea/warnermusickorea_twitter.jpg">
+                <img src="media/thumbs/warnermusickorea/warnermusickorea_twitter.jpg"
+                     width="120"
+                     height="120"
+                     alt="warnermusickorea_twitter.jpg" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©️ CORDTOWN</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
