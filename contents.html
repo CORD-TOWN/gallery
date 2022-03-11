@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Profile Gallery - contents</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Profile Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="contents.html">contents</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/contents/bookjournalism.jpg"
+                data-sub-html=""
+                data-download-url="media/original/contents/bookjournalism.jpg"
+                
+                data-filename="bookjournalism.jpg"
+          
+              >
+              <a href="media/original/contents/bookjournalism.jpg">
+                <img src="media/thumbs/contents/bookjournalism.jpg"
+                     width="120"
+                     height="120"
+                     alt="bookjournalism.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/contents/bookjournalism_big.jpg"
+                data-sub-html=""
+                data-download-url="media/original/contents/bookjournalism_big.jpg"
+                
+                data-filename="bookjournalism_big.jpg"
+          
+              >
+              <a href="media/original/contents/bookjournalism_big.jpg">
+                <img src="media/thumbs/contents/bookjournalism_big.jpg"
+                     width="120"
+                     height="120"
+                     alt="bookjournalism_big.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/contents/folin.png"
+                data-sub-html=""
+                data-download-url="media/original/contents/folin.png"
+                
+                data-filename="folin.png"
+          
+              >
+              <a href="media/original/contents/folin.png">
+                <img src="media/thumbs/contents/folin.png"
+                     width="120"
+                     height="120"
+                     alt="folin.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/contents/jisike.jpg"
+                data-sub-html=""
+                data-download-url="media/original/contents/jisike.jpg"
+                
+                data-filename="jisike.jpg"
+          
+              >
+              <a href="media/original/contents/jisike.jpg">
+                <img src="media/thumbs/contents/jisike.jpg"
+                     width="120"
+                     height="120"
+                     alt="jisike.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/contents/longblack.png"
+                data-sub-html=""
+                data-download-url="media/original/contents/longblack.png"
+                
+                data-filename="longblack.png"
+          
+              >
+              <a href="media/original/contents/longblack.png">
+                <img src="media/thumbs/contents/longblack.png"
+                     width="120"
+                     height="120"
+                     alt="longblack.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/contents/publy.png"
+                data-sub-html=""
+                data-download-url="media/original/contents/publy.png"
+                
+                data-filename="publy.png"
+          
+              >
+              <a href="media/original/contents/publy.png">
+                <img src="media/thumbs/contents/publy.png"
+                     width="120"
+                     height="120"
+                     alt="publy.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/contents/ted.jpg"
+                data-sub-html=""
+                data-download-url="media/original/contents/ted.jpg"
+                
+                data-filename="ted.jpg"
+          
+              >
+              <a href="media/original/contents/ted.jpg">
+                <img src="media/thumbs/contents/ted.jpg"
+                     width="120"
+                     height="120"
+                     alt="ted.jpg" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©️ CORDTOWN</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
