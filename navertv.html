@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Profile Gallery - navertv</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Profile Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="navertv.html">navertv</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/navertv/amazingsaturday.jpg"
+                data-sub-html=""
+                data-download-url="media/original/navertv/amazingsaturday.jpg"
+                
+                data-filename="amazingsaturday.jpg"
+          
+              >
+              <a href="media/original/navertv/amazingsaturday.jpg">
+                <img src="media/thumbs/navertv/amazingsaturday.jpg"
+                     width="120"
+                     height="120"
+                     alt="amazingsaturday.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/navertv/jtbcbros.png"
+                data-sub-html=""
+                data-download-url="media/original/navertv/jtbcbros.png"
+                
+                data-filename="jtbcbros.png"
+          
+              >
+              <a href="media/original/navertv/jtbcbros.png">
+                <img src="media/thumbs/navertv/jtbcbros.png"
+                     width="120"
+                     height="120"
+                     alt="jtbcbros.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/navertv/satfreedom.jpg"
+                data-sub-html=""
+                data-download-url="media/original/navertv/satfreedom.jpg"
+                
+                data-filename="satfreedom.jpg"
+          
+              >
+              <a href="media/original/navertv/satfreedom.jpg">
+                <img src="media/thumbs/navertv/satfreedom.jpg"
+                     width="120"
+                     height="120"
+                     alt="satfreedom.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/navertv/showchampion.png"
+                data-sub-html=""
+                data-download-url="media/original/navertv/showchampion.png"
+                
+                data-filename="showchampion.png"
+          
+              >
+              <a href="media/original/navertv/showchampion.png">
+                <img src="media/thumbs/navertv/showchampion.png"
+                     width="120"
+                     height="120"
+                     alt="showchampion.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/navertv/sketchbook.png"
+                data-sub-html=""
+                data-download-url="media/original/navertv/sketchbook.png"
+                
+                data-filename="sketchbook.png"
+          
+              >
+              <a href="media/original/navertv/sketchbook.png">
+                <img src="media/thumbs/navertv/sketchbook.png"
+                     width="120"
+                     height="120"
+                     alt="sketchbook.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/navertv/weekidol.png"
+                data-sub-html=""
+                data-download-url="media/original/navertv/weekidol.png"
+                
+                data-filename="weekidol.png"
+          
+              >
+              <a href="media/original/navertv/weekidol.png">
+                <img src="media/thumbs/navertv/weekidol.png"
+                     width="120"
+                     height="120"
+                     alt="weekidol.png" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©️ CORDTOWN</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
